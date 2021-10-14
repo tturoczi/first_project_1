@@ -1,27 +1,36 @@
-def hello_func():
-    print("Hello function")
+def print_hello():
+    """Írj egy függvényt, ami kiírja, hogy "Hello Functions!"""
+    print("Hello Functions!")
 
-def ket_par(par1, par2):
-    i=0
-    i= i=par1+par2
-    return(i)
 
-def space_sum (a):
-    count=0
-    for c in a:
+def sum_numbers(a, b):
+    """Írj egy függvényt, ami két paramétert kap, és összeadja ezeket!"""
+    return a + b
+
+
+def count_spaces(s):
+    """Írj egy függvényt, ami visszaadja, hogy a paraméterként átadott
+    szöveg, hány space karaktert tartalmaz!"""
+    count = 0
+    for c in s:
         if c == " ":
             count += 1
-    print(count)
-
-def szamok(szamok_listaja):
-    sum1=0
-    for num in szamok_listaja:
-        sum1 += num
-    return sum / len(szamok_listaja)
 
 
+def calculate_average(numbers):
+    """Írj egy függvényt, ami paraméterként átadott lista átlagát
+adja vissza"""
+    result = 0
+    for number in numbers:
+        result += number
+    return result / len(numbers)
 
 
-hello_func()
-print(ket_par(32,12))
-space_sum("nsdjdfs sdbdhsfbdfsj sbdhsdfh")
+def count_vowels(s):
+    """Írj egy függvényt, ami visszadja, hogy hány magánhangzó
+        van, a paraméterként átadott szövegben!"""
+    count = 0
+    for c in s:
+        if c in "aAeEiIoOuU":
+            count += 1
+    return count
